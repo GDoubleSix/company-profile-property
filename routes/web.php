@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Agent;
 use Illuminate\Support\Facades\Route;
 use App\Models\Property;
 
@@ -9,7 +10,9 @@ Route::get('/', function () {
 
 Route::get('/', function () {
     $property = Property::all();
-    return $property;
+
+    $agents = Agent::take(3)->get();
+    return view('home', compact('agents', 'property'));
 });
 
 // Route::get('/about', function () {
