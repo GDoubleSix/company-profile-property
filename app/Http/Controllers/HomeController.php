@@ -16,7 +16,7 @@ class HomeController extends Controller
 
         $agents = Agent::take(3)->get();
 
-        return view('home', compact(['agents', 'properties']));
+        return view('home', compact(['agents', 'property']));
     }
 
     public function about()
