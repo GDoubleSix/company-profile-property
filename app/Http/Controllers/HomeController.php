@@ -8,7 +8,7 @@ use App\Models\Service;
 use Illuminate\Http\Request;
 use Spatie\FlareClient\View;
 
-class HomeControler extends Controller
+class HomeController extends Controller
 {
     public function home()
     {

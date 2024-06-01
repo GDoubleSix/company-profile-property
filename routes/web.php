@@ -1,14 +1,16 @@
 <?php
 
-use App\Http\Controllers\HomeControler;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PropertyController;
 use App\Models\Agent;
 use Illuminate\Support\Facades\Route;
 use App\Models\Property;
+use App\Models\Service;
 
-Route::get('/', [HomeControler::class, 'home'])->name('page.home');
+
+Route::get('/', [HomeController::class, 'home'])->name('page.home');
 Route::get('/property/{id}', [PropertyController::class, 'show'])->name('page.property.show');
-Route::get('/service', [HomeControler::class, 'service'])->name('page.service');
+Route::get('/service', [HomeController::class, 'service'])->name('page.service');
 
 
 Route::get('/', function () {

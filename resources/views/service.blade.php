@@ -33,7 +33,7 @@
     <div class="section bg-light">
         <div class="container">
           <div class="row">
-            @foreach ($services as $services)
+            @foreach ($service as $service)
             <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="{{200 * ($service->id *300)}}">
                 <div class="box-feature mb-4">
                     <span class="{{$service->picture}} mb-4 d-block"></span>

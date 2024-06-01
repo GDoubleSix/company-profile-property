@@ -24,6 +24,8 @@
 
 @section('site-footer')
 
+@section('content')
+
 <!--loader-->
 @section('loader')
 @endsection

@@ -22,7 +22,7 @@
                 </ul>
               </li>
               <li><a href="{{route('page.service')}}">Services</a></li>
-              <li><a href="./resources/views/about.blade.php">About</a></li>
+              <li><a href="">About</a></li>
               <li><a href="contact.html">Contact Us</a></li>
             </ul>
   

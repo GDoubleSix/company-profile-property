@@ -60,6 +60,9 @@
     <!--loader-->
     @include('partials.preloader.loader')
     @yield('loader')
+
+    @include('services')
+    @yield('content')
     
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/tiny-slider.js"></script>
