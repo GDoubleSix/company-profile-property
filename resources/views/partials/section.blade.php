@@ -44,12 +44,13 @@
                 </div>
               </div>
               @endforeach
+            </div>
 
               <!-- .item -->
 
             <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation">
               <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1">Prev</span>
-              <span class="next" data-controls="next" aria-controls="property" tabindex="-1">Next</span>
+              <span class="next" data-controls="next" aria-controls="property" tabindex="-1">next</span>
             </div>
           </div>
         </div>

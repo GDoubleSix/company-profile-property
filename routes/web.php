@@ -1,12 +1,23 @@
 <?php
 
+use App\Http\Controllers\HomeControler;
+use App\Http\Controllers\PropertyController;
 use App\Models\Agent;
 use Illuminate\Support\Facades\Route;
 use App\Models\Property;
 
+Route::get('/', [HomeControler::class, 'home'])->name('page.home');
+Route::get('/property/{id}', [PropertyController::class, 'show'])->name('page.property.show');
+Route::get('/service', [HomeControler::class, 'service'])->name('page.service');
+
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', function () {
+    return view('about');
+})->name('about');
 
 Route::get('/', function () {
     $property = Property::all();
